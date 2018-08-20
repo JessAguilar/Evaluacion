@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div align="center"><h2>Publicaciones</h2></div>
+  <ion-card>
+  <ion-card-content>
+    <ion-card-title>
+      El perro mas hermoso del Mundo
+    </ion-card-title>
+      <img src="https://lh3.googleusercontent.com/w1evS_QFA_H82YsxnJI66QqGJXZWFtJgR1yUjFUz-RfghjS8Md6k3T_3ANBAinBMdrV_853NwjdEWp70rhn-VjMTOQImiZtMvAqw4c6L4eiEm7R4MbmBqCLKwwlUCJsrUiCXKQp8HugWs4MiEh1TVykl-XjcoGc2JslUKnGHZcU0mA3h3fPXeZy2vvphcyyt37LnyRNLhCLnZKTa6zEFI6OBt70LYHxjMbLhRnLZDTD-DTUNtj1_EyScHL4GbmCPxNg4s_1lyXGobOadLTX_5Rz7-c_LQoNqdoCyTrBKrxlVlrwDvYVmxGVv46DIPTgFBuKC9RWca_9_SPjl-EbowNEK-YosXBMbspfYoNcDft01avh2Qw73kCwKrmURPr5hMH8dsy2F72FfC7nYo8offLauS8PZ2n3OKhQ497-xpr_Nen1XPoWeZArwO1hKnXrurI0M1KqDpa-56tONcZj4bETuTNfDnDhPq9UVNQH_dVmElqljG3Caztbbr6Gbc4YJi6Ya7g07vS6qkDgqOg5uX4aeG3WS8qFt4QWYk_Aq3tpLbAU7u9dCTsN8Ou-0Ec0SnhEL7I2K4DRddYRysKXtCWSKUx7XPU1-bSeBk5c=w496-h662-no">
+    <h3>
+      El es Junior es mi perro y pues lo quiero mucho es como mi hijo, justo en este momento mientras programo el esta en mi falda durmiendo escuchando Queen x3
+    </h3>
+  </ion-card-content>
+  <ion-item>
+    <ion-label floating>Comentar :</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="model.coment"></ion-input>
+  </ion-item>
+  <div align="right"><button type="button" (click)="addMessage()" ion-button >Subir Datos</button></div>
+  <ion-item-sliding *ngFor="let message of messages">
+        <ion-item>
+              <h3>
+                {{message.coment}}
+              </h3>
+        </ion-item>
+  </ion-item-sliding>
+</ion-card>
+<ion-card>
+<ion-card-content>
+  <ion-card-title>
+    El es TownGameplay
+  </ion-card-title>
+    <img src="http://www.cuantogana.org/wp-content/uploads/2016/12/iTownGamePlay.png">
+  <h3>
+  Es un Youtuber que encontre por FNAF pero luego vi que era muy divertido y ademas era compositor sus canciones me encantan
+  </h3>
+</ion-card-content>
+<ion-item>
+  <ion-label floating>Comentar :</ion-label>
+  <ion-input type="text" value="" [(ngModel)]="model.coment1"></ion-input>
+</ion-item>
+<div align="right"><button type="button" (click)="addMessage1()" ion-button >Subir Datos</button></div>
+<ion-item-sliding *ngFor="let message of messages1">
+      <ion-item>
+            <h3>
+              {{message1.coment1}}
+            </h3>
+      </ion-item>
+</ion-item-sliding>
+</ion-card>
+<ion-card>
+<ion-card-content>
+  <ion-card-title>
+    Tus labios
+  </ion-card-title>
+  <video src="https://www.youtube.com/watch?v=Flkb-2Q0mRo"></video>
+  <h3>
+    No dejaba de escucharla su letra me gustaba mucho y era verdad no podia dejar de pensar en sus labios
+  </h3>
+</ion-card-content>
+<ion-item>
+  <ion-label floating>Comentar :</ion-label>
+  <ion-input type="text" value="" [(ngModel)]="model.coment2"></ion-input>
+</ion-item>
+<div align="right"><button type="button" (click)="addMessage2()" ion-button >Subir Datos</button></div>
+<ion-item-sliding *ngFor="let message of messages2">
+      <ion-item>
+            <h3>
+              {{message2.coment2}}
+            </h3>
+      </ion-item>
+</ion-item-sliding>
+</ion-card>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Instrajram ©</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div align="center">
+      <img height="70%" width="70%" src="http://www.webtus.net/wp-content/uploads/2018/06/logo-instagram-tv.png">
+      <ion-label>Usuario</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="model.usuario"></ion-input>
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" value="" [(ngModel)]="model.clave"></ion-input>
+      <button ion-button name="button" (click)="Iniciar()">Ingresar</button>
+  </div>
+
+</ion-content>
